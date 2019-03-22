@@ -1,0 +1,18 @@
+source "https://rubygems.org"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+group :test do
+  gem 'rspec', '~> 3.8.0'
+  gem 'minitest', '~> 5.11.3'
+  gem 'simplecov'
+  gem 'sqlite3'
+  gem 'sequel'
+  gem 'csv'
+end
+
+group :development do
+  gem 'awesome_print', :require => 'ap'
+  gem 'pry'
+  gem 'coderay'
+end
